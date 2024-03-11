@@ -1,0 +1,44 @@
+@import "../general/variables";
+
+nav {
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: 100%;
+  padding: $padding-mobile-navigation;
+
+  .brand_logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+    }
+
+    .wrapper-texts {
+      margin-left: 1rem;
+
+      h1 {
+        font-family: var(--font-cormorant-sc);
+        letter-spacing: 0.1rem;
+      }
+
+      h2 {
+        font-family: var(--font-plus-jakarta-sans);
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .wrapper-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2.5rem;
+  }
+}
